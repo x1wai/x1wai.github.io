@@ -1,1 +1,382 @@
-<!doctype html><html lang="en"><head><!-- hexo injector head_begin start --><meta name="description" content="互联网自留地"></meta><meta name="author" content="x1wai"></meta><!-- hexo injector head_begin end --><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><script type="module" crossorigin src="/static/js/index_prod-41362c69.js"></script><link rel="stylesheet" href="/static/css/index_prod-e00f7461.css"><!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/prism/1.29.0/components/prism-core.js" data-manual></script><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.js"></script><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/prism/1.29.0/themes/prism.min.css"/><link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css"/><link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" /><script rel="preload" src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/valine/1.5.1/Valine.min.js"></script><script rel="preload" src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0-rc2"></head><body id="body-container"><noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.0.0-rc2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="0.写在前面你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。 这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的搭建历程和未来的用途。 好的，现在开始！ 1.建站的心路历程想法的诞生首先，在这里我不得不提一个人，他就是我的室友Enddleo，你现在能看见这个网站，99%都是他的功劳，在这里我向他表示感谢，有机会的话可以帮">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「第一篇文章」——我的网站居然建成了？！">
+<meta property="og:url" content="http://x1wai.cn/post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html">
+<meta property="og:site_name" content="x1wai">
+<meta property="og:description" content="0.写在前面你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。 这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的搭建历程和未来的用途。 好的，现在开始！ 1.建站的心路历程想法的诞生首先，在这里我不得不提一个人，他就是我的室友Enddleo，你现在能看见这个网站，99%都是他的功劳，在这里我向他表示感谢，有机会的话可以帮">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picdl.sunbangyan.cn/2023/08/01/1xdsa.jpeg">
+<meta property="og:image" content="https://picdl.sunbangyan.cn/2023/08/01/c5i6s.jpeg">
+<meta property="og:image" content="https://picdm.sunbangyan.cn/2023/08/01/1uubfd.png">
+<meta property="article:published_time" content="2023-07-31T16:38:24.000Z">
+<meta property="article:modified_time" content="2023-07-31T20:12:35.815Z">
+<meta property="article:author" content="x1wai">
+<meta property="article:tag" content="自传">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picdl.sunbangyan.cn/2023/08/01/1xdsa.jpeg">
+
+
+<link rel="canonical" href="http://x1wai.cn/post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://x1wai.cn/post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html","path":"/post/20230731_我的第一篇文章.html","title":"「第一篇文章」——我的网站居然建成了？！"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>「第一篇文章」——我的网站居然建成了？！ | x1wai</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">x1wai</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#0-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">0.写在前面</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BB%BA%E7%AB%99%E7%9A%84%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B"><span class="nav-number"></span> <span class="nav-text">1.建站的心路历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%B3%E6%B3%95%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="nav-number"></span> <span class="nav-text">想法的诞生</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%85%E5%B0%9D%E8%BE%84%E6%AD%A2"><span class="nav-number"></span> <span class="nav-text">浅尝辄止</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%8D%E6%AC%A1%E6%8C%91%E6%88%98"><span class="nav-number"></span> <span class="nav-text">再次挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4"><span class="nav-number"></span> <span class="nav-text">重大突破</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%BD%91%E7%AB%99%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="nav-number"></span> <span class="nav-text">2.网站的未来</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%85%E7%BB%AA%E5%9E%83%E5%9C%BE%E6%A1%B6"><span class="nav-number"></span> <span class="nav-text">情绪垃圾桶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A%E5%88%86%E4%BA%AB"><span class="nav-number"></span> <span class="nav-text">心得体会分享</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%9C%E5%93%81%E9%9B%86%EF%BC%88%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E4%BC%9A%EF%BC%9F"><span class="nav-number"></span> <span class="nav-text">作品集（未来可能会？</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9C%80%E5%90%8E"><span class="nav-number"></span> <span class="nav-text">3.最后</span></a></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">x1wai</p>
+  <div class="site-description" itemprop="description">新主题测试</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://x1wai.cn/post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="x1wai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="x1wai">
+      <meta itemprop="description" content="新主题测试">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="「第一篇文章」——我的网站居然建成了？！ | x1wai">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          「第一篇文章」——我的网站居然建成了？！
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-08-01 00:38:24 / 修改时间：04:12:35" itemprop="dateCreated datePublished" datetime="2023-08-01T00:38:24+08:00">2023-08-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
+<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
+<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
+</svg>
+</span><h6 id="0-写在前面"><a href="#0-写在前面" class="headerlink" title="0.写在前面"></a>0.写在前面</h6><p>你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。</p>
+<p>这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的<strong>搭建历程</strong>和<strong>未来的用途</strong>。</p>
+<p>好的，现在开始！</p></blockquote>
+<h2 id="1-建站的心路历程"><a href="#1-建站的心路历程" class="headerlink" title="1.建站的心路历程"></a>1.建站的心路历程</h2><h4 id="想法的诞生"><a href="#想法的诞生" class="headerlink" title="想法的诞生"></a>想法的诞生</h4><p>首先，在这里我不得不提一个人，他就是我的室友<strong>Enddleo</strong>，你现在能看见这个网站，99%都是他的功劳，在这里我向他表示感谢，有机会的话可以帮你顺路带份跷脚牛肉。</p>
+<p>我一直觉得，把自己的想法通过某种介质表达并永久保存下来，是一件很酷很有意义的事情，就比如写一首歌、写一本书或者做一个播客。</p>
+<p>曾经这类介质之于我来说其实是拍视频，以前的我会把自己的想法放在视频里，投放到公网上供大家观看并为自己留存下来以便随时回忆。</p>
+<p>但是后来，视频这个东西对于我来说，它的意义变了，因为未来的我可能要以之为职业，所以难免会有些变味儿。</p>
+<p>于是我就需要一个新的途径来存放我的各种想法，我也有考虑过做公众号或写微博；</p>
+<p>但我觉得那种来自神秘力量的审核制度会让我苦不堪言，我不想在表达我的想法之前还要考虑能否过审，<strong>我需要一个自由且永久的平台</strong>，所以，我选择了搭建个人网站——也就是写博客。</p>
+<hr>
+<h4 id="浅尝辄止"><a href="#浅尝辄止" class="headerlink" title="浅尝辄止"></a>浅尝辄止</h4><p>2022年10月</p>
+<p>在我室友的怂恿下，我开始尝试建站。</p>
+<p>我从小就是一个电脑白痴，我讨厌任何和电脑打交道的事情，所以刚开始学习建站，对我来说是痛苦的，在这上面花费的时间、精力和金钱都远超我的想象。</p>
+<p>在投入了大量成本后，我开始感到厌倦，但是想到已经付出那么多了，彻底放弃还是挺难做到的，所以10月过后我几乎就不再碰这个东西了，给自己找借口说“寒假再弄”。</p>
+<img src="https://picdl.sunbangyan.cn/2023/08/01/1xdsa.jpeg" />
+
+<hr>
+<h4 id="再次挑战"><a href="#再次挑战" class="headerlink" title="再次挑战"></a>再次挑战</h4><p>2023年1月 寒假</p>
+<p>我回到了家里，窝在自己房间里，凭借着我对个人网站残存的执念和少得可怜的网站开发知识，在各种我看不懂的文件后缀和代码报错中举步维艰。</p>
+<p>最终通宵了几天后，还是没有彻底建成，虽然网站大抵算是能用了，但是我自己的电脑却无法通过域名访问我的网站，而是指向一个我曾经随便建的一个网站；这让我的创作过程异常艰难，因为我没法在电脑上登陆网站后台，更别说在上面发表文章。</p>
+<p>这个问题在接下来的半年里，都困扰着我，就连我的黑客室友都没不知道怎么解决（后来我找到了解决方案，见下文）。</p>
+<img src="https://picdl.sunbangyan.cn/2023/08/01/c5i6s.jpeg" />
+
+<p>这个难题，几乎劝退了脆弱的我，于是我逐渐放弃，再也没有动过我的网站。</p>
+<hr>
+<h4 id="重大突破"><a href="#重大突破" class="headerlink" title="重大突破"></a>重大突破</h4><p>2023年7月</p>
+<p>我是在22年的10月购买了我现在域名一年的使用权，也就是说，再不开始建站，我的域名就要过期了。</p>
+<p>而由于我的懒惰，曾经投入的那些我已经不想纠结，我只想让建站这个想法在脑海中慢慢隐去……</p>
+<p>但是有一天，</p>
+<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
+<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
+<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
+</svg>
+</span><p>2023.7.27<br>———<br>enddleo: 我强烈建议你弄个静态网站<br>x1wai: 不会<br>enddleo: 很简单的<br>x1wai: 教我<br>enddleo: 那我现在教你</p></blockquote>
+<p>我本来都快接受“我无法建成网站”这个事实，并且承认自己是半途而废了，但是Enddleo，他又给了我希望——搭建<strong>静态网站</strong>。</p>
+<p>于是，短短几天内，你便看到了现在这个网站。</p>
+<p>刚说的那个问题最后也成功解决了，参考了一名<a target="_blank" rel="noopener" href="http://t.csdn.cn/Dcj1w">CSDN网友的遭遇</a>（同时感谢ta提供的解决方案），发现和我是同样的情况，原因出在本地&#x2F;etc&#x2F;hosts文件里，一些指令将域名指向了旧的ip，但后来服务器迁移，域名更换到了新的ip，于是不能在本地访问新的ip，而其他设备没有问题。解决方法如下(macos终端)：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入 sudo vi /etc/hosts</span><br><span class="line">找到如图指令行</span><br><span class="line">输入 dd (删除这行指令)</span><br><span class="line">输入 shift + : + w + q（保存并退出）</span><br><span class="line">退出终端</span><br></pre></td></tr></table></figure>
+<p>如图⇩<br><img src="https://picdm.sunbangyan.cn/2023/08/01/1uubfd.png" /></p>
+<p>虽然我还是不太懂其中的原理，但是这是我学习建站以来第一次自己在网上搜寻搜寻问题解决方法，成功找到一篇问题相同并且能看得懂的文章，最后顺利解决问题。</p>
+<p>这给了我极大的正反馈，我第一次在建站过程中感到如此欣慰，尝到了一点甜头，于是下决心好好把网站部署好。</p>
+<p>从7月27到7月31这几天里，我学习了hexo主题的安装和部署、markdown文件的编辑，在这过程中，我感受到莫大的乐趣，就像我刚开始学习剪辑一样，对着电脑目不转睛地看、对着键盘戳来戳去，从早到晚，甚至有些废寝忘食。</p>
+<p>我很喜欢这种沉浸的状态，因为只有这样，才意味着我找到了一个让我愿意投入，并有所收获的爱好；尤其是当剪视频逐渐不再称得上是我的“爱好”以后，我急需一个承载我无法在视频中透露的情绪的空间、一个能陪伴我很久消磨我工作以外的业余时间的爱好、一个能让我足够纯粹地去创作的一个平台——<strong>西歪歪的个人网站，我的互联网自留地。</strong></p>
+<hr>
+<h2 id="2-网站的未来"><a href="#2-网站的未来" class="headerlink" title="2.网站的未来"></a>2.网站的未来</h2><p>其实我很早就想好了这个网站用来干嘛，但是由于太懒一直没做，不过从今天（2023.8.1）开始，我就要正式开始更新个人网站啦，具体更新内容如下：</p>
+<hr>
+<h4 id="情绪垃圾桶"><a href="#情绪垃圾桶" class="headerlink" title="情绪垃圾桶"></a>情绪垃圾桶</h4><p>截至今天， 微博一直在我的生活中承担着这项巨任：用来盛放我的各种情绪。比如一些往事回忆、一些深夜emo和一些平时生活的分享。但是存放在微博还是欠妥，一是消息总被和谐，二是万一新浪炸了，那我好不容易写的东西岂不是全没了。所以建个网站用来存放废话还是很有必要的。</p>
+<h4 id="心得体会分享"><a href="#心得体会分享" class="headerlink" title="心得体会分享"></a>心得体会分享</h4><p>这里的心得体会，包括但不限于摄影&#x2F;剪辑&#x2F;电影&#x2F;音乐&#x2F;网站开发&#x2F;体育&#x2F;自然 等等一切我感兴趣的话题，可能是对一部电影的影评，也可能是我最爱的专辑的分享，总之我爱发的都发。</p>
+<p>嘿嘿。</p>
+<h4 id="作品集（未来可能会？"><a href="#作品集（未来可能会？" class="headerlink" title="作品集（未来可能会？"></a>作品集（未来可能会？</h4><p>这个再说，也许会实现……</p>
+<hr>
+<h2 id="3-最后"><a href="#3-最后" class="headerlink" title="3.最后"></a>3.最后</h2><blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
+<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
+<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
+</svg>
+</span><center>如果把互联网比作海洋，而我是一名旅行者
+<center>那么长期生活在由别人开发的巨型岛屿上生存总不是一件好事
+
+<center>因为不仅需要遵守他人制定的规则
+<center>而且一直寄人篱下还是很没有安全感的
+
+<center>所以我选择搭建搭建个人网站，发表一些不知道有没有人看的文章，	
+
+<center>说不定会帮助到某个处于困境的网友
+<center>或者慰藉某个与我产生共鸣的灵魂	
+<center>同时也是为自己的人生 留档一篇赛博自传
+
+<center>在互联网海洋上航行属于自己的小船，为有缘的过路之人和未来的自己点上一盏烛灯
+
+<center>终于啊，我也有自己的网站了。</blockquote>
+<center>·
+
+<p><strong><center>&lt; 完 &gt;</strong></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%87%AA%E4%BC%A0/" rel="tag"># 自传</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/20231031%E6%91%84%E5%BD%B11.html" rel="next" title="「路过这个世界并截下一帧」No.01 ——秋🍂">
+                  「路过这个世界并截下一帧」No.01 ——秋🍂 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">x1wai</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" integrity="sha256-4mJNT2bMXxcc1GCJaxBmMPdmah5ji0Ldnd79DKd1hoM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-AjM0J5XIbiB590BrznLEgZGLnOQWrt62s3BEq65Q/I0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha256-9cmf7tcLdXpKsPi/2AWE93PbZpTp4M4tqzFk+lWomjU=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
