@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="关于秋天的一些记忆一.临走前闻到了东北的秋天 2022.8.11 刚从哈尔滨机场起飞时透过窗户随手拍下了这张照片   由于在成都上学，这也许是未来很久一段时间里最后一点我的东北秋天的记忆了，因此这张照片尤其可贵并且唤起了我很多回忆。 立秋过后，东北的天气便七月流火，以近乎断崖式的速度进入秋季；除了气温直转急下，另一个直观感受就是空气的味道变了。 这个真的很神奇，嗅觉的记忆在我脑海里十分深刻，而且大">
 <meta property="og:type" content="article">
@@ -80,11 +80,11 @@
       <p class="site-title">x1wai</p>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">互联网自留地</p>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -93,11 +93,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </header>
         
@@ -117,7 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E7%A7%8B%E5%A4%A9%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BF%86"><span class="nav-number">1.</span> <span class="nav-text">关于秋天的一些记忆</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80-%E4%B8%B4%E8%B5%B0%E5%89%8D%E9%97%BB%E5%88%B0%E4%BA%86%E4%B8%9C%E5%8C%97%E7%9A%84%E7%A7%8B%E5%A4%A9"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">一.临走前闻到了东北的秋天</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C-%E6%88%90%E9%83%BD%E5%92%8C%E4%B8%9C%E5%8C%97%E7%9A%84%E7%A7%8B%E5%A4%A9%E4%B8%8D%E4%B8%80%E6%A0%B7%E5%9C%A8%E2%80%A6"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">二.成都和东北的秋天不一样在…</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E7%A7%8B%E5%A4%A9%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BF%86"><span class="nav-text">关于秋天的一些记忆</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80-%E4%B8%B4%E8%B5%B0%E5%89%8D%E9%97%BB%E5%88%B0%E4%BA%86%E4%B8%9C%E5%8C%97%E7%9A%84%E7%A7%8B%E5%A4%A9"><span class="nav-text">一.临走前闻到了东北的秋天</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C-%E6%88%90%E9%83%BD%E5%92%8C%E4%B8%9C%E5%8C%97%E7%9A%84%E7%A7%8B%E5%A4%A9%E4%B8%8D%E4%B8%80%E6%A0%B7%E5%9C%A8%E2%80%A6"><span class="nav-text">二.成都和东北的秋天不一样在…</span></a></li></ol></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -126,7 +152,7 @@
     <img class="site-author-image" itemprop="image" alt="x1wai"
       src="https://i.postimg.cc/NMZHLjcP/pixil-frame-5.png">
   <p class="site-author-name" itemprop="name">x1wai</p>
-  <div class="site-description" itemprop="description">新主题测试</div>
+  <div class="site-description" itemprop="description">少年回头望，笑我还不快跟上。</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -174,7 +200,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="x1wai">
-      <meta itemprop="description" content="新主题测试">
+      <meta itemprop="description" content="少年回头望，笑我还不快跟上。">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -196,28 +222,28 @@
 
       <time title="创建时间：2023-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2023-11-01T00:00:00+08:00">2023-11-01</time>
     </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-29 19:54:52" itemprop="dateModified" datetime="2023-11-29T19:54:52+08:00">2023-11-29</time>
-    </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span></span>
+      <span>850</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>NaN:aN</span>
+      <span>1 分钟</span>
     </span>
 </div>
 
@@ -227,7 +253,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="关于秋天的一些记忆"><a href="#关于秋天的一些记忆" class="headerlink" title="关于秋天的一些记忆"></a>关于秋天的一些记忆</h1><h4 id="一-临走前闻到了东北的秋天"><a href="#一-临走前闻到了东北的秋天" class="headerlink" title="一.临走前闻到了东北的秋天"></a>一.临走前闻到了东北的秋天</h4><p><img src="https://picdl.sunbangyan.cn/2023/11/01/68e87d67c70e8802a9e2148a9ce81a8e.jpeg" alt="航拍哈尔滨机场附近的田地"></p>
+    <div class="post-body" itemprop="articleBody"><h1 id="关于秋天的一些记忆"><a href="#关于秋天的一些记忆" class="headerlink" title="关于秋天的一些记忆"></a>关于秋天的一些记忆</h1><h4 id="一-临走前闻到了东北的秋天"><a href="#一-临走前闻到了东北的秋天" class="headerlink" title="一.临走前闻到了东北的秋天"></a>一.临走前闻到了东北的秋天</h4><p><img data-src="https://picdl.sunbangyan.cn/2023/11/01/68e87d67c70e8802a9e2148a9ce81a8e.jpeg" alt="航拍哈尔滨机场附近的田地"></p>
 <center>2022.8.11 刚从哈尔滨机场起飞时透过窗户随手拍下了这张照片</center>
 
 
@@ -241,7 +267,7 @@
 
 <p>如果用最朴实无华的话讲，应该就是“麦黄色”的味道（也许我问到的味道并不是真的麦香，但那的确是我儿时脑海里最符合“麦”这个字的味道）。</p>
 <p>而恰好在我那天登机前，在机场的停机坪上就闻到了东北秋天的味道，虽然短暂，但也算满足了。</p>
-<h4 id="二-成都和东北的秋天不一样在…"><a href="#二-成都和东北的秋天不一样在…" class="headerlink" title="二.成都和东北的秋天不一样在…"></a>二.成都和东北的秋天不一样在…</h4><p><img src="https://picst.sunbangyan.cn/2023/11/01/163c09ed4ed9c1d52d7805ce5eb1e984.jpg" alt="IMG_2358"><br> <center>2022.11.22 早八下课 出太阳了而且正好带了相机</center><br>说说关于四季的另一个故事。</p>
+<h4 id="二-成都和东北的秋天不一样在…"><a href="#二-成都和东北的秋天不一样在…" class="headerlink" title="二.成都和东北的秋天不一样在…"></a>二.成都和东北的秋天不一样在…</h4><p><img data-src="https://picst.sunbangyan.cn/2023/11/01/163c09ed4ed9c1d52d7805ce5eb1e984.jpg" alt="IMG_2358"><br> <center>2022.11.22 早八下课 出太阳了而且正好带了相机</center><br>说说关于四季的另一个故事。</p>
 <p>曾经的我最喜欢夏天和冬天，因为夏天可以出去旅游，冬天可以玩雪，光是这两点原因就足以让小时候的我无比期盼冬夏的到来了。</p>
 <p>但是长大以后，逐渐喜欢秋天了，因为我人生重要的节点大多发生在秋天，其中最具代表性的就是毕业和升学。</p>
 <p>到了成都上学以后，甚至有些反感夏天了，天气炎热且不说，主要是夏天给人一种在潮湿的感觉，就像在雨后的森林中穿行，难免身上会被水浸湿，脚底也会变得泥泞，就宛如在外面淘气了一天灰头土脸回家的孩子。</p>
@@ -303,14 +329,32 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">4k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">4 分钟</span>
   </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 </div>
 
 <div>
@@ -324,7 +368,25 @@
 </span>
 </div>
 
-
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+  var now = new Date();
+  function createtime() {
+    var grt= new Date("07/31/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+    now.setTime(now.getTime()+250);
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+    document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒.";
+  }
+setInterval("createtime()",250);
+</script>
     </div>
   </footer>
 
@@ -356,7 +418,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
 
 
 
@@ -365,6 +429,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

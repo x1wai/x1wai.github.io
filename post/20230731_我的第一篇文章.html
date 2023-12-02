@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="0.写在前面你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。 这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的搭建历程和未来的用途。 好的，现在开始！">
 <meta property="og:type" content="article">
@@ -81,11 +81,11 @@
       <p class="site-title">x1wai</p>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">互联网自留地</p>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -94,11 +94,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </header>
         
@@ -118,7 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#0-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">0.写在前面</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BB%BA%E7%AB%99%E7%9A%84%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B"><span class="nav-number"></span> <span class="nav-text">1.建站的心路历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%B3%E6%B3%95%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="nav-number"></span> <span class="nav-text">想法的诞生</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%85%E5%B0%9D%E8%BE%84%E6%AD%A2"><span class="nav-number"></span> <span class="nav-text">浅尝辄止</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%8D%E6%AC%A1%E6%8C%91%E6%88%98"><span class="nav-number"></span> <span class="nav-text">再次挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4"><span class="nav-number"></span> <span class="nav-text">重大突破</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%BD%91%E7%AB%99%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="nav-number"></span> <span class="nav-text">2.网站的未来</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%85%E7%BB%AA%E5%9E%83%E5%9C%BE%E6%A1%B6"><span class="nav-number"></span> <span class="nav-text">情绪垃圾桶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A%E5%88%86%E4%BA%AB"><span class="nav-number"></span> <span class="nav-text">心得体会分享</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%9C%E5%93%81%E9%9B%86%EF%BC%88%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E4%BC%9A%EF%BC%9F"><span class="nav-number"></span> <span class="nav-text">作品集（未来可能会？</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9C%80%E5%90%8E"><span class="nav-number"></span> <span class="nav-text">3.最后</span></a></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#0-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-text">0.写在前面</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BB%BA%E7%AB%99%E7%9A%84%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B"><span class="nav-text">1.建站的心路历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%B3%E6%B3%95%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="nav-text">想法的诞生</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%85%E5%B0%9D%E8%BE%84%E6%AD%A2"><span class="nav-text">浅尝辄止</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%8D%E6%AC%A1%E6%8C%91%E6%88%98"><span class="nav-text">再次挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4"><span class="nav-text">重大突破</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%BD%91%E7%AB%99%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="nav-text">2.网站的未来</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%85%E7%BB%AA%E5%9E%83%E5%9C%BE%E6%A1%B6"><span class="nav-text">情绪垃圾桶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A%E5%88%86%E4%BA%AB"><span class="nav-text">心得体会分享</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%9C%E5%93%81%E9%9B%86%EF%BC%88%E6%9C%AA%E6%9D%A5%E5%8F%AF%E8%83%BD%E4%BC%9A%EF%BC%9F"><span class="nav-text">作品集（未来可能会？</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9C%80%E5%90%8E"><span class="nav-text">3.最后</span></a></div>
         </div>
         <!--/noindex-->
 
@@ -127,7 +153,7 @@
     <img class="site-author-image" itemprop="image" alt="x1wai"
       src="https://i.postimg.cc/NMZHLjcP/pixil-frame-5.png">
   <p class="site-author-name" itemprop="name">x1wai</p>
-  <div class="site-description" itemprop="description">新主题测试</div>
+  <div class="site-description" itemprop="description">少年回头望，笑我还不快跟上。</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -175,7 +201,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="x1wai">
-      <meta itemprop="description" content="新主题测试">
+      <meta itemprop="description" content="少年回头望，笑我还不快跟上。">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -197,28 +223,28 @@
 
       <time title="创建时间：2023-08-01 00:38:24" itemprop="dateCreated datePublished" datetime="2023-08-01T00:38:24+08:00">2023-08-01</time>
     </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-29 19:55:13" itemprop="dateModified" datetime="2023-11-29T19:55:13+08:00">2023-11-29</time>
-    </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span></span>
+      <span>2.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>NaN:aN</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -246,14 +272,14 @@
 <p>在我室友的怂恿下，我开始尝试建站。</p>
 <p>我从小就是一个电脑白痴，我讨厌任何和电脑打交道的事情，所以刚开始学习建站，对我来说是痛苦的，在这上面花费的时间、精力和金钱都远超我的想象。</p>
 <p>在投入了大量成本后，我开始感到厌倦，但是想到已经付出那么多了，彻底放弃还是挺难做到的，所以10月过后我几乎就不再碰这个东西了，给自己找借口说“寒假再弄”。</p>
-<img src="https://picdl.sunbangyan.cn/2023/08/01/1xdsa.jpeg" />
+<img data-src="https://picdl.sunbangyan.cn/2023/08/01/1xdsa.jpeg" />
 
 <hr>
 <h4 id="再次挑战"><a href="#再次挑战" class="headerlink" title="再次挑战"></a>再次挑战</h4><p>2023年1月 寒假</p>
 <p>我回到了家里，窝在自己房间里，凭借着我对个人网站残存的执念和少得可怜的网站开发知识，在各种我看不懂的文件后缀和代码报错中举步维艰。</p>
 <p>最终通宵了几天后，还是没有彻底建成，虽然网站大抵算是能用了，但是我自己的电脑却无法通过域名访问我的网站，而是指向一个我曾经随便建的一个网站；这让我的创作过程异常艰难，因为我没法在电脑上登陆网站后台，更别说在上面发表文章。</p>
 <p>这个问题在接下来的半年里，都困扰着我，就连我的黑客室友都没不知道怎么解决（后来我找到了解决方案，见下文）。</p>
-<img src="https://picdl.sunbangyan.cn/2023/08/01/c5i6s.jpeg" />
+<img data-src="https://picdl.sunbangyan.cn/2023/08/01/c5i6s.jpeg" />
 
 <p>这个难题，几乎劝退了脆弱的我，于是我逐渐放弃，再也没有动过我的网站。</p>
 <hr>
@@ -268,7 +294,7 @@
 <p>于是，短短几天内，你便看到了现在这个网站。</p>
 <p>刚说的那个问题最后也成功解决了，参考了一名<a target="_blank" rel="noopener" href="http://t.csdn.cn/Dcj1w">CSDN网友的遭遇</a>（同时感谢ta提供的解决方案），发现和我是同样的情况，原因出在本地&#x2F;etc&#x2F;hosts文件里，一些指令将域名指向了旧的ip，但后来服务器迁移，域名更换到了新的ip，于是不能在本地访问新的ip，而其他设备没有问题。解决方法如下(macos终端)：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入 sudo vi /etc/hosts</span><br><span class="line">找到如图指令行</span><br><span class="line">输入 dd (删除这行指令)</span><br><span class="line">输入 shift + : + w + q（保存并退出）</span><br><span class="line">退出终端</span><br></pre></td></tr></table></figure>
-<p>如图⇩<br><img src="https://picdm.sunbangyan.cn/2023/08/01/1uubfd.png" /></p>
+<p>如图⇩<br><img data-src="https://picdm.sunbangyan.cn/2023/08/01/1uubfd.png" /></p>
 <p>虽然我还是不太懂其中的原理，但是这是我学习建站以来第一次自己在网上搜寻搜寻问题解决方法，成功找到一篇问题相同并且能看得懂的文章，最后顺利解决问题。</p>
 <p>这给了我极大的正反馈，我第一次在建站过程中感到如此欣慰，尝到了一点甜头，于是下决心好好把网站部署好。</p>
 <p>从7月27到7月31这几天里，我学习了hexo主题的安装和部署、markdown文件的编辑，在这过程中，我感受到莫大的乐趣，就像我刚开始学习剪辑一样，对着电脑目不转睛地看、对着键盘戳来戳去，从早到晚，甚至有些废寝忘食。</p>
@@ -352,14 +378,32 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">4k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">4 分钟</span>
   </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 </div>
 
 <div>
@@ -373,7 +417,25 @@
 </span>
 </div>
 
-
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+  var now = new Date();
+  function createtime() {
+    var grt= new Date("07/31/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+    now.setTime(now.getTime()+250);
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+    document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒.";
+  }
+setInterval("createtime()",250);
+</script>
     </div>
   </footer>
 
@@ -405,7 +467,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
 
 
 
@@ -414,6 +478,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
