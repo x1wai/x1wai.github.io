@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"x1wai.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="写在前面你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。 这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的搭建历程和未来的用途。 好的，现在开始！">
 <meta property="og:type" content="article">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://picdl.sunbangyan.cn/2023/08/01/c5i6s.jpeg">
 <meta property="og:image" content="https://picdm.sunbangyan.cn/2023/08/01/1uubfd.png">
 <meta property="article:published_time" content="2023-07-31T16:38:24.000Z">
-<meta property="article:modified_time" content="2023-12-08T14:56:44.324Z">
+<meta property="article:modified_time" content="2023-12-08T16:46:37.777Z">
 <meta property="article:author" content="x1wai">
 <meta property="article:tag" content="建站">
 <meta name="twitter:card" content="summary">
@@ -224,7 +224,7 @@
 <p>刚说的那个问题最后也成功解决了，参考了一名<a target="_blank" rel="noopener" href="http://t.csdn.cn/Dcj1w">CSDN网友的遭遇</a>（同时感谢ta提供的解决方案），发现和我是同样的情况，原因出在本地&#x2F;etc&#x2F;hosts文件里，一些指令将域名指向了旧的ip，但后来服务器迁移，域名更换到了新的ip，于是不能在本地访问新的ip，而其他设备没有问题。解决方法如下(macos终端)：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入 sudo vi /etc/hosts</span><br><span class="line">找到如图指令行</span><br><span class="line">输入 dd (删除这行指令)</span><br><span class="line">输入 shift + : + w + q（保存并退出）</span><br><span class="line">退出终端</span><br></pre></td></tr></table></figure>
 <p>如图⇩<br><img data-src="https://picdm.sunbangyan.cn/2023/08/01/1uubfd.png" /></p>
-<p>虽然我还是不太懂其中的原理，但是这是我学习建站以来第一次自己在网上搜寻搜寻问题解决方法，成功找到一篇问题相同并且能看得懂的文章，最后顺利解决问题。</p>
+<p>虽然我还是不太懂其中的原理，但是这是我学习建站以来第一次自己在网上搜寻问题解决方法，成功找到一篇问题相同并且能看得懂的文章，最后顺利解决问题。</p>
 <p>这给了我极大的正反馈，我第一次在建站过程中感到如此欣慰，尝到了一点甜头，于是下决心好好把网站部署好。</p>
 <p>从7月27到7月31这几天里，我学习了hexo主题的安装和部署、markdown文件的编辑，在这过程中，我感受到莫大的乐趣，就像我刚开始学习剪辑一样，对着电脑目不转睛地看、对着键盘戳来戳去，从早到晚，甚至有些废寝忘食。</p>
 <p>我很喜欢这种沉浸的状态，因为只有这样，才意味着我找到了一个让我愿意投入，并有所收获的爱好；尤其是当剪视频逐渐不再称得上是我的“爱好”以后，我急需一个承载我无法在视频中透露的情绪的空间、一个能陪伴我很久消磨我工作以外的业余时间的爱好、一个能让我足够纯粹地去创作的一个平台——<strong>西歪歪的个人网站，我的互联网自留地。</strong></p>
