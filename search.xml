@@ -4,7 +4,7 @@
     <title>「第一篇文章」——我的网站居然建成了？！</title>
     <url>//post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html</url>
     <content><![CDATA[<blockquote>
-<h6 id="0-写在前面"><a href="#0-写在前面" class="headerlink" title="0.写在前面"></a>0.写在前面</h6><p>你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。</p>
+<h6 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h6><p>你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。</p>
 <p>这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的<strong>搭建历程</strong>和<strong>未来的用途</strong>。</p>
 <p>好的，现在开始！</p>
 </blockquote>
@@ -77,8 +77,11 @@
 
 <p><strong><center>&lt; 完 &gt;</strong></p>
 ]]></content>
+      <categories>
+        <category>自传</category>
+      </categories>
       <tags>
-        <tag>自传</tag>
+        <tag>建站</tag>
       </tags>
   </entry>
   <entry>
@@ -107,6 +110,9 @@
 <p>这也许也和我的心境有关系吧，夏天好像太过热情了，仿佛恨不得邀请你加入它的水深火热之中；而秋天相比之下就安静许多。</p>
 <p>真的迫不及待了，秋天快来吧，好想过秋天啊。</p>
 <center><完></center>]]></content>
+      <categories>
+        <category>摄影</category>
+      </categories>
       <tags>
         <tag>摄影</tag>
       </tags>
@@ -147,6 +153,9 @@
 <p>也许在某个再平常不过的午后，当我对不知道吃啥犹豫不决时，突然想到711已经不在了，这时才会真正意识到，</p>
 <p>二十四小时营业的711也有关门的一天.</p>
 <center><完></center>]]></content>
+      <categories>
+        <category>摄影</category>
+      </categories>
       <tags>
         <tag>摄影</tag>
       </tags>
