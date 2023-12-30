@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>x1wai</title>
+  <icon>http://x1wai.cn/icon.png</icon>
+  <subtitle>互联网自留地</subtitle>
+  <link href="http://x1wai.cn/atom.xml" rel="self"/>
+  
+  <link href="http://x1wai.cn/"/>
+  <updated>2023-12-29T14:34:52.777Z</updated>
+  <id>http://x1wai.cn/</id>
+  
+  <author>
+    <name>x1wai</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「路过这个世界并截下一帧」No.02 ——711🏪</title>
+    <link href="http://x1wai.cn/post/20231109%E6%91%84%E5%BD%B12.html"/>
+    <id>http://x1wai.cn/post/20231109%E6%91%84%E5%BD%B12.html</id>
+    <published>2023-11-08T16:00:00.000Z</published>
+    <updated>2023-12-29T14:34:52.777Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;7-ELEVEN&quot;&gt;&lt;a href=&quot;#7-ELEVEN&quot; class=&quot;headerlink&quot; title=&quot;7-ELEVEN&quot;&gt;&lt;/a&gt;7-ELEVEN&lt;/h1&gt;&lt;img data-src=&quot;https://picss.sunbangyan.cn/2023/11/09/135ff134d8046c1f592cfba83912ac96.png&quot; style=&quot;zoom: 50%;&quot; /&gt;
+
+&lt;center&gt;2023.3.23 在夜雨中的711便利店&lt;/center&gt;
+
+&lt;p&gt;为了赶上那场夜雨，本来还在饭后遛弯的我连忙回寝室拿相机。&lt;/p&gt;
+&lt;p&gt;在黑夜里寻着光亮，一路拍到了校园的商街。&lt;/p&gt;
+&lt;p&gt;我用镜头记录下来这些时刻：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="摄影" scheme="http://x1wai.cn/categories/%E6%91%84%E5%BD%B1/"/>
+    
+    
+    <category term="摄影" scheme="http://x1wai.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「路过这个世界并截下一帧」No.01 ——秋🍂</title>
+    <link href="http://x1wai.cn/post/20231031%E6%91%84%E5%BD%B11.html"/>
+    <id>http://x1wai.cn/post/20231031%E6%91%84%E5%BD%B11.html</id>
+    <published>2023-10-31T16:00:00.000Z</published>
+    <updated>2023-12-29T14:34:03.679Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;临走前闻到了东北的秋天&quot;&gt;&lt;a href=&quot;#临走前闻到了东北的秋天&quot; class=&quot;headerlink&quot; title=&quot;临走前闻到了东北的秋天&quot;&gt;&lt;/a&gt;临走前闻到了东北的秋天&lt;/h1&gt;&lt;img data-src=&quot;https://picdl.sunbangyan.cn/2023/11/01/68e87d67c70e8802a9e2148a9ce81a8e.jpeg&quot; alt=&quot;航拍哈尔滨机场附近的田地&quot; style=&quot;zoom:15%;&quot; /&gt;
+
+&lt;center&gt;2022.8.11 刚从哈尔滨机场起飞时透过窗户随手拍下了这张照片&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="摄影" scheme="http://x1wai.cn/categories/%E6%91%84%E5%BD%B1/"/>
+    
+    
+    <category term="摄影" scheme="http://x1wai.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「第一篇文章」——我的网站居然建成了？！</title>
+    <link href="http://x1wai.cn/post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html"/>
+    <id>http://x1wai.cn/post/20230731_%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html</id>
+    <published>2023-07-31T16:38:24.000Z</published>
+    <updated>2023-12-29T14:36:41.259Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h3&gt;&lt;p&gt;你好，我的朋友，我是西歪歪，如果你看到了这句话，那么说明这个让我花费一年多时间的网站，终于建成了。&lt;/p&gt;
+&lt;p&gt;这是我在个人网站上发表的第一篇正式文章，主要想聊聊这个网站的&lt;strong&gt;搭建历程&lt;/strong&gt;和&lt;strong&gt;未来的用途&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;好的，现在开始！&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="自传" scheme="http://x1wai.cn/categories/%E8%87%AA%E4%BC%A0/"/>
+    
+    
+    <category term="建站" scheme="http://x1wai.cn/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+</feed>
