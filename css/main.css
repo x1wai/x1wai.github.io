@@ -39,7 +39,7 @@
     --table-row-hover-bg-color: #363636;
     --menu-item-bg-color: #555;
     --theme-color: #222;
-    --btn-default-bg: #222;
+    --btn-default-bg: #d74040;
     --btn-default-color: #ccc;
     --btn-default-border-color: #555;
     --btn-default-hover-bg: #666;
@@ -1473,7 +1473,7 @@ pre code {
   }
 }
 .book-mark-link::before {
-  color: #222;
+  color: #d74040;
   font-size: 32px;
   line-height: 1;
   content: '\f02e';
@@ -1911,7 +1911,7 @@ pre code {
 }
 .reading-progress-bar {
   --progress: 0;
-  background: #20b2aa;
+  background: #d74040;
   height: 3px;
   position: fixed;
   z-index: 50;
@@ -2801,7 +2801,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #93aaff;
+  background: #00d11d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
